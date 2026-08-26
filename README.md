@@ -64,5 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PlanetSpark is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+
+PlanetSpark is an Indian education-technology company headquartered in Gurugram, founded in 2017 by
+Kunal Malik and Maneesh Dhooper, delivering live 1:1 online classes in public speaking, spoken
+English, creative writing, grammar, debating and vlogging to K-8 learners, alongside mental and
+Vedic mathematics, abacus and school-excellence programmes and communication courses for working
+professionals. It is a direct-to-consumer subscription business.
+
+**PlanetSpark publishes no API.** Probed 2026-08-26: no developer portal, no API reference, and no
+OpenAPI, AsyncAPI, GraphQL SDL, Protobuf, WSDL, Postman collection, MCP server or A2A agent card on
+any PlanetSpark host. `*.planetspark.in` is a wildcard DNS record, so `api.`, `docs.`, `developer.`
+and `backend.` all resolve but answer with the marketing site. `planetspark.com` is a parked domain
+and is not operated by the company.
+
+- https://www.planetspark.in/

@@ -1,0 +1,21 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.planetspark.in/
+docs: null
+limit_count: 0
+note: >-
+  No rate limits are documented because PlanetSpark publishes no API. There is
+  no developer portal, no API reference and no machine-readable contract on any
+  PlanetSpark host, so there are no published quotas, windows, burst allowances,
+  X-RateLimit-*/RateLimit-* response headers or documented 429 behaviour to
+  record. The site's robots.txt disallows /api/*, which covers the internal
+  AJAX routes the consumer web app calls; those are not a published API.
+rate_limits: []
+headers: []
+evidence:
+- url: https://www.planetspark.in/developers
+  status: 404
+- url: https://www.planetspark.in/api
+  status: 404
+- url: https://www.planetspark.in/robots.txt
+  status: 200

@@ -1,0 +1,60 @@
+generated: '2026-08-26'
+method: probed
+source: live HTTP probes of PlanetSpark hosts, 2026-08-26
+note: >-
+  Every /.well-known/ path probed returned 404 on every PlanetSpark host. No
+  WellKnown or SecurityTxt pointer is emitted in apis.yml, because a recorded
+  absence is not a served surface. Note that *.planetspark.in resolves via a
+  wildcard to the same CloudFront distribution that serves the marketing site,
+  so any 200 on this host family that carries text/html is the marketing SPA
+  catch-all rather than a document; none of the probes below returned a 200.
+hosts:
+- host: www.planetspark.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: api.planetspark.in
+  note: >-
+    Wildcard DNS record; the host answers with the same marketing SPA as
+    www.planetspark.in and exposes no API surface.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

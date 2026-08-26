@@ -1,17 +1,34 @@
 aid: planetspark
 name: PlanetSpark
-description: 'PlanetSpark is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'PlanetSpark is an Indian education-technology company headquartered in
+  Gurugram, founded in 2017 by Kunal Malik and Maneesh Dhooper, that delivers live
+  1:1 online classes in public speaking, spoken English, creative writing, grammar,
+  debating and vlogging to K-8 learners, along with mental and Vedic mathematics,
+  abacus and school-excellence programmes, plus communication courses for working
+  professionals. It sells directly to parents and learners through www.planetspark.in
+  as a consumer subscription; it operates no public developer programme, publishes
+  no API documentation or machine-readable contract, and its only external
+  integration surface is an affiliate registration programme.'
 url: https://raw.githubusercontent.com/api-evangelist/planetspark/refs/heads/main/apis.yml
+image: https://cdn.planetspark.in/images/planetspark-logo-po.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Education
+- EdTech
+- Online Learning
+- Tutoring
+- Public Speaking
+- English Language
+- Mathematics
+- Consumer
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,48 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/planetspark-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.planetspark.in/
+- type: Blog
+  url: https://www.planetspark.in/blogs
+- type: Support
+  url: https://www.planetspark.in/contact
+- type: TermsOfService
+  url: https://www.planetspark.in/terms
+- type: PrivacyPolicy
+  url: https://www.planetspark.in/privacy
+- type: Login
+  url: https://www.planetspark.in/account/sign_in
+- type: Plans
+  url: plans/planetspark-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/planetspark-rate-limits.yml
+- type: LLMsTxt
+  url: llms/planetspark-llms.txt
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    PlanetSpark sells live 1:1 tutoring subscriptions direct to parents and has no
+    developer programme at all — /developers, /api, /openapi.json, /graphql and every
+    /.well-known/ path 404 on both www.planetspark.in and the wildcard api.planetspark.in,
+    which answers with the same marketing SPA rather than an API.
+  evidence:
+  - url: https://www.planetspark.in/developers
+    status: 404
+  - url: https://www.planetspark.in/openapi.json
+    status: 404
+  - url: https://api.planetspark.in/openapi.json
+    status: 404
+  - url: https://www.planetspark.in/.well-known/agent-card.json
+    status: 404
+  - url: https://api.planetspark.in/graphql
+    status: 404
+  checked: '2026-08-26'

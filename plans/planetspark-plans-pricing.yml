@@ -1,0 +1,23 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.planetspark.in/
+docs: null
+plan_count: 0
+note: >-
+  PlanetSpark publishes no pricing page and no plan table. /pricing and /plans
+  both return 404 on www.planetspark.in, and neither the programme pages
+  (/english_programs, /maths_programs, /curriculum) nor the B2B page
+  (/business) state a price, a class-pack size, or a subscription tier. The
+  published commercial motion is a booked free trial class — every call to
+  action routes to /parents/c/start, after which a counsellor quotes a price
+  by phone. There is no API and therefore no API pricing of any kind.
+plans: []
+evidence:
+- url: https://www.planetspark.in/pricing
+  status: 404
+- url: https://www.planetspark.in/plans
+  status: 404
+- url: https://www.planetspark.in/business
+  status: 200
+- url: https://www.planetspark.in/parents/c/start?source=website
+  status: 200
