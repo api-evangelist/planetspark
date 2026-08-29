@@ -10,6 +10,17 @@ description: 'PlanetSpark is an Indian education-technology company headquartere
   no API documentation or machine-readable contract, and its only external
   integration surface is an affiliate registration programme.'
 url: https://raw.githubusercontent.com/api-evangelist/planetspark/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.planetspark.in/images/planetspark-logo-po.png
 x-type: company
 x-source: harvest:secondary-market
