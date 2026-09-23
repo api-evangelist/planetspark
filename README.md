@@ -64,7 +64,6 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-
 PlanetSpark is an Indian education-technology company headquartered in Gurugram, founded in 2017 by
 Kunal Malik and Maneesh Dhooper, delivering live 1:1 online classes in public speaking, spoken
 English, creative writing, grammar, debating and vlogging to K-8 learners, alongside mental and
